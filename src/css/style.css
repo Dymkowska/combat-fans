@@ -11,12 +11,18 @@ button {
   padding: 2vh;
   margin: 5vh;
   text-transform: uppercase;
+  font-weight: 600;
   border: 1px solid darkgray;
   border-radius: 5px;
-  background-color: #5f1b1b; }
+  background-color: #7e2121;
+  transition: all .3s; }
   button a {
     text-decoration: none;
     color: whitesmoke; }
+    button a:hover {
+      color: black; }
+  button:hover {
+    background-color: darkgray; }
 
 .header-content {
   display: flex;

@@ -6,6 +6,9 @@
 // Mixins
 @import "mixin.scss";
 
+// Colors
+$mainRed: rgb(126, 33, 33);
+
 
 body {
     box-sizing: border-box;
@@ -21,13 +24,20 @@ button {
     padding: 2vh;
     margin: 5vh;
     text-transform: uppercase;
+    font-weight: 600;
     border: 1px solid darkgray;
     border-radius: 5px;
-    background-color: rgb(95, 27, 27);
-    
+    background-color: $mainRed;
+    transition: all .3s;
     a{
         text-decoration: none;
         color: whitesmoke;
+        &:hover{
+            color: black;
+        }
+    }
+    &:hover {
+        background-color: darkgray;
     }
 }
 
