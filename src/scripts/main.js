@@ -7,4 +7,4 @@ const changeMenu = () => {
 };
 
 open.addEventListener("click", changeMenu);
-close.addEventListener("click", changeMenu)
+close.addEventListener("click", changeMenu);

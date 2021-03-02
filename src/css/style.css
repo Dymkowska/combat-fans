@@ -34,7 +34,6 @@ button {
   justify-content: center;
   background-image: url(../images/main.jpg);
   background-size: cover;
-  background-position-x: -2px;
   height: 60vh; }
   .header-content h1 {
     margin: 5vh;
@@ -59,7 +58,7 @@ nav {
         flex-direction: row;
         align-items: center;
         justify-content: center; }
-        nav ul .icon {
+        nav ul button.icon {
           display: none; } }
     nav ul button.icon {
       border: none;
@@ -80,6 +79,9 @@ nav {
         font-size: 1.2rem;
         font-weight: 600; }
 
+.burger-menu ul {
+  align-items: flex-start; }
+
 .burger-menu li.menu-item {
   display: none; }
 
@@ -88,3 +90,9 @@ nav {
 
 .burger-menu button.open {
   display: block; }
+
+@media (min-width: 768px) {
+  .burger-menu button.icon {
+    display: none; }
+  .burger-menu li.menu-item {
+    display: block; } }
