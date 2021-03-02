@@ -4,3 +4,24 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin flexCenterRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin for-size($size) {
+    @if $size == xs {
+      @media (max-width: 575px) { @content; }
+    } @else if $size == sm {
+      @media (min-width: 576px) { @content; }
+    } @else if $size == md {
+      @media (min-width: 768px) { @content; }
+    } @else if $size == lg {
+      @media (min-width: 992px) { @content; }
+    } @else if $size == xl {
+      @media (min-width: 1200px) { @content; }
+    }
+  }

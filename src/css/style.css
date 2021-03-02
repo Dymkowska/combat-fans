@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+html {
+  font-size: 1.1vw; }
+
 body {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -12,17 +15,17 @@ button {
   margin: 5vh;
   text-transform: uppercase;
   font-weight: 600;
-  border: 1px solid darkgray;
+  border: 1px solid #a9a9a9;
   border-radius: 5px;
   background-color: #7e2121;
   transition: all .3s; }
   button a {
     text-decoration: none;
-    color: whitesmoke; }
+    color: #f5f5f5; }
     button a:hover {
       color: black; }
   button:hover {
-    background-color: darkgray; }
+    background-color: #a8a8a8; }
 
 .header-content {
   display: flex;
@@ -35,6 +38,53 @@ button {
   height: 60vh; }
   .header-content h1 {
     margin: 5vh;
-    color: whitesmoke;
+    color: #f5f5f5;
     font-size: 2.5rem;
     letter-spacing: .1rem; }
+
+nav {
+  background-color: #7e2121;
+  padding: 1vh;
+  min-height: 4rem; }
+  nav ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; }
+        nav ul .icon {
+          display: none; } }
+    nav ul button.icon {
+      border: none;
+      margin: 0;
+      padding: 0; }
+      nav ul button.icon:hover {
+        background-color: #7e2121; }
+    nav ul button.open {
+      display: none; }
+    nav ul i {
+      color: #f5f5f5;
+      font-size: 3.5rem; }
+    nav ul li {
+      padding: 0.9rem 2rem; }
+      nav ul li a {
+        text-decoration: none;
+        color: #f5f5f5;
+        font-size: 1.2rem;
+        font-weight: 600; }
+
+.burger-menu li.menu-item {
+  display: none; }
+
+.burger-menu button.close {
+  display: none; }
+
+.burger-menu button.open {
+  display: block; }
